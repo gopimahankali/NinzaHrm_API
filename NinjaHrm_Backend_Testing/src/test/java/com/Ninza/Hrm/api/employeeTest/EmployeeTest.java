@@ -46,6 +46,7 @@ Response resp	= given()
 	// ---------- UI Validation ----------
 	DashBoard_Module dash = new DashBoard_Module(driver);
 	Employees_Module emp = new Employees_Module(driver);
+	Thread.sleep(2000);
 	web.explicitWait(driver, dash.getEmployees(), 10);
 	dash.getEmployees().click();
 	web.explicitWait(driver, emp.getEmployeeId(employeeId, proName), 10);

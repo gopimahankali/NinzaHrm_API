@@ -36,6 +36,7 @@ public class ProjectTest extends NinzaHrmBaseClass {
 		 // ---------- UI ----------
         DashBoard_Module dash = new DashBoard_Module(driver);
         Projects_Module pm = new Projects_Module(driver);
+        Thread.sleep(2000);
 		web.explicitWait(driver, dash.getProjects(), 10);
 		dash.getProjects().click();
 		web.explicitWait(driver, pm.getProjectStatus(projectId), 10);
