@@ -3,22 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Ninza.Hrm.api.employeeTest.EmployeeTest">
-        <methods>
-          <include name="DbConnection"/>
-          <include name="login"/>
-          <include name="loginToApplication"/>
-          <include name="logout"/>
-          <include name="closeBrowser"/>
-          <include name="AddEmployee"/>
-          <include name="closeDbConnection"/>
-        </methods>
-      </class> <!-- com.Ninza.Hrm.api.employeeTest.EmployeeTest -->
       <class name="com.Ninza.Hrm.api.projectTest.ProjectTest">
         <methods>
           <include name="createProject"/>
-          <include name="DbConnection"/>
+          <include name="createDuplicateProject"/>
           <include name="login"/>
+          <include name="DbConnection"/>
           <include name="loginToApplication"/>
           <include name="closeBrowser"/>
           <include name="logout"/>
