@@ -6,12 +6,11 @@
       <class name="com.Ninza.Hrm.api.projectTest.ProjectTest">
         <methods>
           <include name="createProject"/>
-          <include name="createDuplicateProject"/>
-          <include name="login"/>
           <include name="DbConnection"/>
+          <include name="login"/>
           <include name="loginToApplication"/>
-          <include name="closeBrowser"/>
           <include name="logout"/>
+          <include name="closeBrowser"/>
           <include name="closeDbConnection"/>
         </methods>
       </class> <!-- com.Ninza.Hrm.api.projectTest.ProjectTest -->
